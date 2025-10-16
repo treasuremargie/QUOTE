@@ -16,9 +16,9 @@
         </div>
         <div class="navbar-menu" id="navbarMenu">
             <ul>
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#" class="link"onclick="toggleAbout()">About</a></li>
-                <li><a href="#" class="link"onclick="toggletipsfacts()">tipsfacts</a></li>
+                <li><a href="#">home</a>
+                <li><a href="#">About</a></li>    
+                <li><a href="#">tipsfacts</a></li>
                    </ul>
                 </div>
              </nav>
@@ -35,16 +35,15 @@
   </section>
 
   <!--About Section-->
-  <section class="about-section" id="about" style="display: none;">
+  <section class="about" id="about" ></section>
     <div class="about-content">
         <h2>About us</h2>
         <p>This website was created to inspire young teens and motivate them,it is a free space were one can share their opinions freely without discrimination.</p>
         <div class="blush face blush face">🥰</div>
     </div>
-  </section>
-
+ 
   <!--tipsfacts-->
-  <section class="tipsfacts-section" id="tips" style="display: none;">
+  <section id="tipsfacts" class="tips-section"></section>
     <div class="tips-container">
         <h2>🌹 Tips 🌹</h2> 
         <p>Pray,journal or write things you are greatful for.</p>       
@@ -65,24 +64,12 @@
   </section>
   <!--script-->
   <script>
-    const homesection = document.getElementById("home");
     const aboutSection = document.getElementById("about");
     const tipsfactsSection = document.getElementById("tipsfacts");
-    //Toggle About Section
-    function toggleAbout() {
-    aboutSection.style.display = "none";
-    tipsfactsSection.style.display = "none";
-    if(homeSection.style.display == "none" || aboutSection.style.display === "") {
-     homeSection.style.display = "block";
-     homeSection.scrollIntoView({behavior: "smooth"});
-    }else {
-        homeSection.style.display = "none";
-    }
-    }
     // Toggle About Section
     function toggleabout(){
-        homesection.style.display = "none";
         tipsfactsSection.style.display = "none";
+        aboutSection.style.display = "none";
         if(aboutSection.style.display === "none" || aboutSection.style.display === ""){
             aboutSection.style.display = "block";
             aboutSection.scrollIntoView({behavior: "smooth"});
@@ -90,13 +77,15 @@
             aboutSection.style.display = "none";
         }
     }
-    // Toggle TipsFacts Section
+    // Toggle tipsfactsSection
     function toggletipsfacts(){
     homesection.style.display = "none";
-    aboutSection.style.display = "none";
+    tipsfactsSection.style.display = "none";
     if(tipsfactsSection.style.display === "none" || tipsfactsSection.style.display === ""){
         tipsfactsSection.style.
         tipsfactsSection.scrollIntoView({behavior:"smooth"});
+    }else{
+        tipsfactsSection.style.display = "none";
     }
     }
   </script>
