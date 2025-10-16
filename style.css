@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins'sans-serif;
+    font-family: 'Poppins',sans-serif;
 }
 body{
     text-align: center;
@@ -11,10 +11,10 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    background: url("img/About_page_background.webp")no-repeat;
-    background-size: cover;
-    background-position: top;
     background-color: #E3D2C3;
 }
 h1{
@@ -24,7 +24,7 @@ h1{
     font-size: 3em;
     margin-bottom: 20px;
 }
-/*------------NAVIGATION---------------*/
+/*------------NAVIGATIONBAR---------------*/
 .navbar{
     position: fixed;
     top: 0;
@@ -54,7 +54,8 @@ h1{
     padding-bottom: 15px;
     margin: 0 25px;
 }
-.link:hover,.active{
+.link:hover,
+.active{
     border-bottom: 2px solid #000000;
 }
 .navbar-button .btn{
@@ -70,13 +71,10 @@ h1{
 .btn:hover{
     background: rgba(255,255,255,0.3);
 }
-#registerBtn{
-    margin-left: 15px;
-}
 .btn.white-btn{
     background: rgba(255,255,255,0.7);
 }
-.btrn.white-btn:hover{
+.btn.white-btn:hover{
     background: rgba(255,255,255,0.5);
 }    
 .navbar-menu-btn{
@@ -108,9 +106,6 @@ h1{
     display: flex;
     flex-direction: column;
     transition: 0.5s ease-in-out;
-}
-.register-container{
-    display: none;
 }
 .top span{
     color: #333;
@@ -209,7 +204,8 @@ header{
     color: #FF4D4D;
 }
 /*------------SLIDESHOW IMAGE AREA ----------------*/
-.container,.slide{
+.container,
+.slide{
     width: 100%;
     height: 100vh;
 }
@@ -315,4 +311,74 @@ header{
     line-height: 1.8;
     color: #333;
 }
+.misson-box{
+    align-items: center;
+    min-height: 30vh;
+    position: absolute;
+    justify-content: center;
+    bottom: -350px;
+    left: 0%;
+    right: -1%;
+    background: #FFF5F7;
+    border-left: 5px solid #FF4F81;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    color: #444;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.mission-box h3{
+    margin: 0 0 5px;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.1rem;
+}
+.vision-box{
+    align-items: center;
+    min-height: 30vh;
+    position: absolute;
+    justify-content: center;
+    bottom: -200px;
+    left:
+}
 
+.home-section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#FFECD2,#FCB69F);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Poppins',sans-serif;
+}
+.home-content{
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    padding: 50px;
+    border-radius: 25px;
+    max-width: 700px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+.home-content h1 {
+    font-size: 2.5rem;
+    color: #4B2E2E;
+}
+.home-content p{
+    font-size: 1.2rem;
+    margin: 15px 0 30px;
+    color: #5A3E36;
+}
+.home-btn{
+    background: #FF7F50;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.home-btn:hover{
+    background: #FF5722;
+}
