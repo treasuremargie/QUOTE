@@ -1,18 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins'sans-serif;
 }
 body{
     text-align: center;
     color: #FFD877;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 1.4em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     background: url("img/About_page_background.webp")no-repeat;
     background-size: cover;
@@ -20,131 +19,129 @@ body{
     background-color: #E3D2C3;
 }
 h1{
-   text-align: center; 
-   align-self: start;
-   color: #B7FF00;
-   font-size: 3em;
-   margin-bottom: 20px;
+    text-align: center;
+    align-self: start; 
+    color: #B7FF00;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
-/*-------------------NAVIGATIONBAR-----------------*/
-.navbar{
+/*------------NAVIGATION---------------*/
+.nav{
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 100%;
+    height: 100px;
     line-height: 100px;
     background: linear-gradient(39,39,39,0.6),transparent;
     z-index: 100;
 }
-.navbar-logo p{
+.nav-logo p{
     color: rgb(255,255,255);
     font-size: 25px;
     font-weight: 600;
 }
-.navbar-manu ul{
+.nav-menu ul{
     display: flex;
 }
-.navbar-menu ul il{
+.nav-menu ul li{
     list-style-type: none;
 }
-.navbar-menu ul li .link{
+.nav-menu ul li.link{
     text-decoration: none;
     font-weight: 500;
     color: #FFFFFF;
     padding-bottom: 15px;
     margin: 0 25px;
 }
-.link:hover,
-.active{
+.link:hover,.active{
     border-bottom: 2px solid #000000;
-   }
-   .navbar-button .btn{
+}
+.nav-button .btn{
     width: 130px;
-    height:40px;
+    height: 40px;
     font-weight: 500;
     background: rgba(255,255,255,0.4);
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s ease;
-   }
-   .btn:hover{
+}
+.btn:hover{
     background: rgba(255,255,255,0.3);
-   }
-   #registerBtn{
-    margin-left:15px
-   }
-   .btn.white-btn{
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
     background: rgba(255,255,255,0.7);
-   }
-   .btn.white-btn:hover{
+}
+.btrn.white-btn:hover{
     background: rgba(255,255,255,0.5);
-   }
-   .navbar-menu-btn{
+}    
+.nav-menu-btn{
     display: none;
-   }
-   /*--------------MODAL FORM STYLES--------------*/
-   .FORM-BOX{
+}
+/*-------------------MODAL FORM STYLES---------------------*/
+.form-box{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
     align-items: center;
-    justify-content: center;
     width: 550px;
     height: 500px;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3); 
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
     z-index: 1000;
     padding: 20px;
-   }
-   .form-box.active{
+}
+.form-box.active{
     display: flex;
-   }
-   .login-container,.register-container{
+}
+.login-container,.register-container{
     position: absolute;
     background: linear-gradient(135deg,#FFECD2,#FFCCBB);
     width: 100%;
-    padding: 20px;
+    padding: 20PX;
     display: flex;
     flex-direction: column;
     transition: 0.5s ease-in-out;
-   }
-   .register-container{
+}
+.register-container{
     display: none;
-   }
-   .top span a {
+}
+.top span{
     color: #333;
     font-size: small;
     padding: 10px 0;
     display: flex;
     justify-content: center;
-   }
-   .top span a {
+}
+.top span a {
     font-weight: 500;
     color: #007BFF;
-    margin-left: 5px;
+    margin-left: 5PX;
     text-decoration: none;
-   }
-   .top span a hover{
+}
+.top span a:hover{
     text-decoration: underline;
-   }
-   header{
+}
+header{
     color: #333;
     font-size: 30px;
     text-align: center;
-    padding: 10px 30px 0;
-   }
-   .input-box{
+    padding: 10px 0 30px 0;
+}
+.input-box{
     position: relative;
     margin-bottom: 20px;
-   }
-   .input-feild{
+}
+.input-feild{
     font-size: 15px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.05);
     color: #333;
     height: 50px;
     width: 100%;
@@ -152,54 +149,54 @@ h1{
     border: none;
     border-radius: 30px;
     outline: none;
-    transition: 0.2s ease;
-   }
-   .input-feild:hover,
-   .input-feild:focus{
-    background: rgba(0,0,0,0.08);
-   }
-   .input-box i {
+    transition: 0.2 ease;
+}
+.input-feild:hover,
+.input-feild:focus{
+    background: rgba(255,255,255,0.08);
+}
+.input-box i {
     position: absolute;
     top: 15px;
     left: 15px;
     color: #666;
-   }
-   .submit{
+}
+.submit{
     font-size: 15px;
     font-weight: 500;
-    color: rgba(255,255,255);
+    color: rgb(255,255,255);
     background: #007BFF;
     height: 45px;
     width: 100%;
     border: none;
-    border-radius: 30px ;
-    cursor:pointer;
+    border-radius: 30px;
+    cursor: pointer;
     transition: 0.3s ease-in-out;
-   }
-   .submit:hover{
+}
+.submit:hover{
     background: #0056B3;
     box-shadow: 1px 5px 7px 1px rgba(0,0,0,0.2);
-   }
-   .two-col{
+}
+.two-col{
     display: flex;
     justify-content: space-between;
     font-size: small;
     margin-top: 10px;
     color: #333;
-   }
-   .two-col.one{
+}
+.two-col .one{
     display: flex;
     gap: 5px;
-   }
-   .two label a {
+}
+.two label a {
     text-decoration: none;
     color: #007BFF;
-   }
-   .two label a:hover{
+}
+.two label a:hover{
     text-decoration: underline;
-   }
-   .close-btn{
-    position:absolute;
+}
+.close-btn{
+    position: absolute;
     top: 15px;
     right: 15px;
     font-size: 20px;
@@ -208,33 +205,38 @@ h1{
     border: none;
     cursor: pointer;
     z-index: 1001;
-   }
-   .close-btn:hover{
+}
+.close-btn:hover{
     color: #FF4D4D;
-   }
-   /*-------------SLIDESHOW IMAGE AREA---------------*/
-   .container,
-   .slide{
+}
+/*------------SLIDESHOW IMAGE AREA ----------------*/
+.container,.slide{
     width: 100%;
     height: 100vh;
-   }
-   .slides img{
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide img{
     width: 100%;
     height: 98%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-   }
-   /*----------------RESPONSIVE---------------------*/
-   @media only screen and (max-width:786px){
+}
+/*--------------RESPONSIVE-------------------*/
+@media only screen and (max-width:786px){
     .nav-button{
         display: none;
     }
-    .navbar-menu.responsive{
+    .navbar-menu.reponsive{
         top: 100px;
+
     }
-    .navbar-menu {
+    .navbar-menu{
         position: absolute;
         top: -800px;
         display: flex;
@@ -243,38 +245,44 @@ h1{
         width: 100%;
         height: 90vh;
         backdrop-filter: blur(20px);
-        transition: 0.3s;
+        transition: 0,3s;
     }
     .navbar-menu ul{
         flex-direction: column;
-        text-align: center; 
-   }
-   .navbar-menu-btn{
-    display: block;
-   }
-.navbar-menu-btn i{
-    font-size: 25px;
-    color: pointer;
-    transition: 0.3s;
+        text-align: center;
+    }
+    .navbar-menu-btn{
+        display: block;
+    }
+    .navbar-menu-btn i {
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .navbar-menu-btn i:hover{
+        background: rgba(255,255,255,0.15);
+    } 
 }
-.navbar-menu-btn i:hover{
-    background: rgba(255,255,255,0.15);
-}
-   }
-   @media only screen and (max-width: 540px) {
+@media only screen and (max-width:540px){
     .wrapper{
-        min-height:100vh;
+        min-height: 100vh;
     }
     .form-box{
         width: 95%;
         height: auto;
         padding: 20px;
     }
-    .register-container,.login-container{
+    .register-container,
+    .login-container{
         padding: 0;
     }
     .two-forms{
         flex-direction: column;
         gap: 10px;
     }
-   }
+}
+
