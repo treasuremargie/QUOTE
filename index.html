@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREESPACE</title>
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
@@ -44,8 +43,8 @@
     </div>
   </section>
 
-  <!--Tips&Facts-->
-  <section id="tips&facts" class="tips-section" style="display: none;"></section>
+  <!--tipsfacts-->
+  <section id="tipsfacts" class="tips-section" style="display: none;"></section>
     <div class="tips-container">
         <h2>🌹 Tips 🌹</h2> 
         <p>Pray,journal or write things you are greatful for.</p>       
@@ -64,6 +63,44 @@
         </div>
     </div>
   </section>
+  <!--script-->
+  <script>
+    const homesection = document.getElementById("home");
+    const aboutSection = document.getElementById("about");
+    const tipsfactsSection = document.getElementById("tipsfacts");
+    //Toggle About Section
+    function toggleAbout() {
+    aboutSection.style.display = "none";
+    tipsfactsSection.style.display = "none";
+    if(homeSection.style.display == "none" || aboutSection.style.display === "") {
+     homeSection.style.display = "block";
+     homeSection.scrollIntoView({behavior: "smooth"});
+    }else {
+        homeSection.style.display = "none";
+    }
+    }
+    // Toggle About Section
+    function toggleabout(){
+        homesection.style.display = "none";
+        tipsfactsSection.style.display = "none";
+        if(aboutSection.style.display === "none" || aboutSection.style.display === ""){
+            aboutSection.style.display = "block";
+            aboutSection.scrollIntoView({behavior: "smooth"});
+        }else{
+            aboutSection.style.display = "none";
+        }
+    }
+    // Toggle TipsFacts Section
+    function toggletipsfacts(){
+    homesection.style.display = "none";
+    aboutSection.style.display = "none";
+    if(tipsfactsSection.style.display === "none" || tipsfactsSection.style.display === ""){
+        tipsfactsSection.style.display = "block`";
+        tipsfactsSection.scrollIntoView({behavior:"smooth"});
+    }else {
+        tipsfactsSection.style.display = "none";
+    }
+    }
+  </script>
 </body>
-   <script src="js.js"></script>
 </html>
