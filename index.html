@@ -16,9 +16,9 @@
         </div>
         <div class="navbar-menu" id="navbarMenu">
             <ul>
-                <li><a href="#">home</a>
-                <li><a href="#">About</a></li>    
-                <li><a href="#">tipsfacts</a></li>
+                <li><a href="#" class="link active">home</a>
+                <li><a href="#"class="link" onclick="toggleabout()">About</a></li>    
+                <li><a href="#" class="link" onclick="toggletipsfacts()">tipsfacts</a></li>
                    </ul>
                 </div>
              </nav>
@@ -32,14 +32,15 @@
         <h2>A space to reflect and feel better.</h2>
             </div>
   </section>
+
   <!--About Section-->
   <section id="about" class="about-section"></section>
     <div class="about-container">
         <h2>About us</h2>
-        <p>This website was created to inspire young teens and motivate them.</p>
+        <p>This website was created to inspire young teens and motivate them.<p>
             <p>I created this website to spread positivity all around the world😁.</p>
-           <p> This wll help reduce the number of people suffering from depression.</p>
-           <p>This will also help reduceviolence around the world and spread posotivity </p>
+            <p>This will help reduce the number of people suffering from depression</p>
+            <p>This website will help reduce violence around the world</p>
         <div class="blush face blush face">🥰</div>
     </div>
  
@@ -63,5 +64,32 @@
         </div>
     </div>
   </section>
+  <!--script-->
+  <script>
+    const aboutSection = document.getElementById("about");
+    const tipsfactsSection = document.getElementById("tipsfacts");
+    // Toggle About Section
+    function toggleabout(){
+        aboutSection.style.display = "none";
+        aboutSection.style.display = "none";
+        if(aboutSection.style.display === "none" || aboutSection.style.display === ""){
+            aboutSection.style.display = "block";
+            aboutSection.scrollIntoView({behavior: "smooth"});
+        }else{
+            aboutSection.style.display = "none";
+        }
+    }
+    // Toggle tipsfactsSection
+    function toggletipsfacts(){
+    tipsfactsSection.style.display = "none";
+    tipsfactsSection.style.display = "none";
+    if(tipsfactsSection.style.display === "none" || tipsfactsSection.style.display === ""){
+        tipsfactsSection.style.display = "block";
+        tipsfactsSection.scrollIntoView({behavior:"smooth"});
+    }else{
+        tipsfactsSection.style.display = "none";
+    }
+    }
+  </script>
 </body>
 </html>
