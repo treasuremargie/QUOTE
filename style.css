@@ -8,7 +8,7 @@ body{
     text-align: center;
     color: #FFD877;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     font-size: 1.4em;
     text-transform: uppercase;
@@ -73,7 +73,6 @@ li a{
 }
 .home-btn{
     background: #FF7F50;
-    color:#fff;
     padding: 12px 25px;
     border-radius: 50px;
     text-decoration: none;
@@ -85,7 +84,7 @@ li a{
 }
 .tips-section{
     width: 100%;
-    min-height: 100vh;
+    min-height: 10vh;
     bottom: 200;
     display: flex;
     justify-content: center;
@@ -116,40 +115,32 @@ li a{
 }
 .about-section{
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(135deg,#e60b99,#FCB69F);
+    min-height: 10vh;
+    bottom: 200;
     display: flex;
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg,#cd95b8 0%,#FFC2E9 100%);
     font-family: 'Poppins',sans-serif;
-
 }
-.about-content{
-        background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(8px);
-    padding: 50px;
-    border-radius: 10px;
-    max-width: 800px;
-    box-shadow: 0 8px 10px rgba(0,0,0,0.1);
-
+.about-container{
+    max-width: 10000px;    
+    background: linear-gradient(135deg,#cd95b8 0%,#e835a6 100%);
+   border-left: 5px solid #FFD735;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(255,255,255,0.15);
+    text-align: center;
+    position: relative;
 }
-.about-content h1 {
-    font-size: 2.5rem;
-    color: #4B2E2E;
+.about-container h2{
+    font-size: 2.rem;
+    margin-bottom: 20px;
+    color: #FFF350;/*Aqua blue for freshness*/
 }
-.about-content p{
-    font-size: 1.2rem;
-    margin: 15px 0 30px;
-    color: #5A3E36;
+.about-container p{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
 }
-.about-btn{
-    background: #FF7F50;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.about-btn:hover{
-    background: #FF5722;
-}
-
