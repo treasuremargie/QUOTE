@@ -7,3 +7,4 @@ Hi My name is Treasure , I am from Kenya . I love coding.
  I made my project using HTML,CSS ,Javascript and hardwork and dedication.
 
  I had lots of challenges with css but i had to learn to be resilient with determination not to quit.
+ [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
